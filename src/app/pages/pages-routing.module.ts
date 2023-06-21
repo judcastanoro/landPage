@@ -11,6 +11,11 @@ const routes: Routes = [{
   component: PagesComponent,
   children: [
     {
+      path:'landpage',
+      loadChildren: ()=> import('./landpage/landpage.module')
+      .then(m=>m.LandpageModule),
+    },
+    {
       path: 'dashboard',
       component: ECommerceComponent,
     },

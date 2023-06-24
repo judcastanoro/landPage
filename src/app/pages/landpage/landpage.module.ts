@@ -29,8 +29,6 @@ import { NewsService } from '../layout/news.service';
 @NgModule({
   declarations: [
     ProyectsComponent,
-    NewsPostPlaceholderComponent,
-    NewsPostComponent,
   ],
   imports: [
     CommonModule,

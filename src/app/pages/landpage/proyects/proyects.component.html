@@ -1,54 +1,173 @@
-<div class="steppers-container row">
-  <div class="col-md-12 col-lg-6 col-xxxl-6">
-    <nb-card size="medium">
+<div class="steppers-container row" class="card1">
+  <div class="col-xxxl-16 col-xxxl-16 col-xxxl-16">
+    <nb-card size="giant">
       <nb-card-body>
-        <nb-stepper orientation="vertical">
-          <nb-step label="First step">
-            <h3>Step content #1</h3>
+        <nb-stepper [linear]=false orientation="vertical" >
+          <nb-step label="ABOUT ME">
+            <h2>About me</h2>
             <p class="lorem">
-              Proin varius accumsan semper. Praesent consequat tincidunt sagittis. Curabitur egestas sem a ipsum bibendum,
-              sit amet fringilla orci efficitur. Nam bibendum lectus ut viverra tristique. Fusce eu pulvinar magna, quis
-              viverra ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus turpis, commodo vel
-              placerat quis, lobortis in ligula.
+              I am from Bogotá, Colombia. I am currently studying Computer Science at the National University of Colombia.
+              <br>
+              Enthusiastic about information technology, I am actively seeking
+              professional opportunities that align with my passion for software
+              development, with a primary focus on web and design applications.
+              <br>
             </p>
-            <button nbButton disabled nbStepperNext>prev</button>
-            <button nbButton nbStepperNext>next</button>
+            <div class="centrar-imagen">
+              <img src="../../../../assets/images/aboutme.jpg" alt="About Me" />
+            </div>
+            <div class="alinear">
+              <button nbButton disabled nbStepperNext size="large">prev</button>
+              <button nbButton nbStepperNext size="large">next</button>
+            </div>
           </nb-step>
-          <nb-step label="Second step">
-            <h3>Step content #2</h3>
-            <p class="lorem">
-              Curabitur luctus mattis risus nec condimentum. Donec at dui turpis. Sed vehicula fringilla rutrum. Nullam
-              sed ornare magna. Mauris vitae laoreet diam. Mauris fermentum ligula at lacinia semper. Nulla placerat dui
-              eu sapien pellentesque, eu placerat leo luctus. Cras pharetra blandit fermentum.
-            </p>
-            <button nbButton nbStepperPrevious>prev</button>
-            <button nbButton nbStepperNext>next</button>
+
+          <nb-step label="PROYECTS">
+            <h2>Proyects</h2>
+
+            <nb-accordion>
+              <nb-accordion-item>
+                <nb-accordion-item-header>
+                  ELECTION SIMULATOR
+                </nb-accordion-item-header>
+                <nb-accordion-item-body>
+                  <p>
+                    Creation of a complete CRUD web service simulating the registry's election results with microservices. 
+                  </p>
+                  <p>  
+                    Among the functions of the web service is the registration of voters, parties and representatives, authentication,
+                     recording of votes and displaying the results of the elections.
+                  </p>
+                  
+                  <div class="col-md-6">
+                    <div class="centrar-imagen">
+                      <img src="../../../../assets/images/Restaurante1.png" alt="About Me" />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="centrar-imagen">
+                      <img src="../../../../assets/images/Restaurante2.png" alt="About Me" />
+                    </div>
+                  </div>
+
+                  <p>
+                    <br>See it in more details <a href="https://github.com/JuanCarrill0/ProyectoTIC" target="_blank">HERE</a>
+                  </p>
+                </nb-accordion-item-body>
+              </nb-accordion-item>
+
+              <nb-accordion-item>
+                <nb-accordion-item-header>
+                  RESTAURANT RESERVATION SYSTEM
+                </nb-accordion-item-header>
+                <nb-accordion-item-body>
+                  <p>
+                    Creation of a complete CRUD web service in which you
+                     can register, log in, see the menu and hours 
+                     available to make reservations.
+                  </p>
+                   
+                  <div class="col-md-6">
+                    <div class="centrar-imagen">
+                      <img src="../../../../assets/images/Restaurante3.png" alt="About Me" />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="centrar-imagen">
+                      <img src="../../../../assets/images/Restaurante4.png" alt="About Me" />
+                    </div>
+                  </div>
+                  <p>
+                    <br>See it in more details <a href="https://github.com/judcastanoro/Restaurante" target="_blank">HERE</a>
+                  </p>
+
+                </nb-accordion-item-body>
+              </nb-accordion-item>
+            </nb-accordion>
+
+            <div class="alinear">
+              <button nbButton nbStepperNext size="large">prev</button>
+              <button nbButton nbStepperNext size="large">next</button>
+            </div>
           </nb-step>
-          <nb-step label="Third step">
-            <h3>Step content #3</h3>
-            <p class="lorem">
-              Proin varius accumsan semper. Praesent consequat tincidunt sagittis. Curabitur egestas sem a ipsum bibendum,
-              sit amet fringilla orci efficitur. Nam bibendum lectus ut viverra tristique. Fusce eu pulvinar magna, quis
-              viverra ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus turpis, commodo vel
-              placerat quis, lobortis in ligula.
-            </p>
-            <p class="lorem">
-              Curabitur luctus mattis risus nec condimentum. Donec at dui turpis. Sed vehicula fringilla rutrum. Nullam
-              sed ornare magna. Mauris vitae laoreet diam. Mauris fermentum ligula at lacinia semper. Nulla placerat dui
-              eu sapien pellentesque, eu placerat leo luctus. Cras pharetra blandit fermentum.
-            </p>
-            <button nbButton nbStepperPrevious>prev</button>
-            <button nbButton nbStepperNext>next</button>
+          <nb-step label="STUDIES AND CERTIFICATIONS">
+            <h2>Studies</h2>
+
+            <nb-card>
+              <nb-card-body>
+                <nb-tabset fullWidth>
+                  <nb-tab tabTitle="COURSES">
+                    <div >
+                      <div class="centrar-imagen">
+                        <img src="../../../../assets/images/Cer1.png" alt="About Me" />
+                      </div>
+                    </div>
+                    <div >
+                      <div class="centrar-imagen">
+                        <img src="../../../../assets/images/Cer2.png" alt="About Me" />
+                      </div>
+                    </div>
+                    <div >
+                      <div class="centrar-imagen">
+                        <img src="../../../../assets/images/Cer3.png" alt="About Me" />
+                      </div>
+                    </div>
+                    <div >
+                      <div class="centrar-imagen">
+                        <img src="../../../../assets/images/Cer4.png" alt="About Me" />
+                      </div>
+                    </div>
+                  </nb-tab>
+                  <nb-tab tabTitle="CERTIFICATIONS">
+                    <div class="centrar-imagen">
+                      <img src="../../../../assets/images/Cer5.png" alt="About Me" />
+                    </div>
+                    <div class="centrar-imagen">
+                      <img src="../../../../assets/images/Cer6.png" alt="About Me" />
+                    </div>
+                  </nb-tab>
+                </nb-tabset>
+            
+              </nb-card-body>
+            </nb-card>
+
+            <div class="alinear">
+              <button nbButton nbStepperNext size="large">prev</button>
+              <button nbButton nbStepperNext size="large">next</button>
+            </div>
           </nb-step>
-          <nb-step label="Fourth step">
-            <h3>Step content #4</h3>
-            <p class="lorem">
-              Proin varius accumsan semper. Praesent consequat tincidunt sagittis. Curabitur egestas sem a ipsum bibendum,
-              sit amet fringilla orci efficitur. Nam bibendum lectus ut viverra tristique. Fusce eu pulvinar magna, quis
-              viverra ex.
-            </p>
-            <button nbButton nbStepperPrevious>prev</button>
-            <button nbButton disabled nbStepperNext>next</button>
+          <nb-step label="CONTACT ME">
+            <h2>Contact me</h2>
+            <a href="www.linkedin.com/in/juan-david-castano-rodriguez-31ba51251" target="_blank" >Coadfasfa</a>
+  
+            <div class="col-12 .col-lg-12">
+              <div class="col-md-6">
+                <div class="centrar-imagen">
+                  <a href="www.linkedin.com/in/juan-david-castano-rodriguez-31ba51251" target="_blank" >Coadfasfa</a>
+                  <a href="github.com/judcastanoro" target="_blank" class="ion ion-social-github">
+                    <img src="../../../../assets/images/GIT.png" alt="About Me" />
+                  </a>
+                  
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="centrar-imagen">
+                  <a href="www.linkedin.com/in/juan-david-castano-rodriguez-31ba51251" target="_blank" class="ion ion-social-github">
+                    <img src="../../../../assets/images/linkedin.png" alt="About Me" />
+                  </a>
+                  
+                </div>
+              </div>
+              <div class="alinear">
+                <button nbButton nbStepperNext size="large">prev</button>
+                <button nbButton disabled nbStepperNext size="large">next</button>
+                <a href="www.linkedin.com/in/juan-david-castano-rodriguez-31ba51251" target="_blank" >Coadfasfa</a>
+              </div>
+
+            </div>
+
           </nb-step>
         </nb-stepper>
       </nb-card-body>

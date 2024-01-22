@@ -75,12 +75,13 @@ const routes: Routes = [{
     },
     {
       path: '',
-      redirectTo: 'dashboard',
-      pathMatch: 'full',
+      loadChildren: ()=> import('./landpage/landpage.module')
+      .then(m=>m.LandpageModule),
     },
     {
       path: '**',
-      component: NotFoundComponent,
+      loadChildren: ()=> import('./landpage/landpage.module')
+      .then(m=>m.LandpageModule),
     },
   ],
 }];

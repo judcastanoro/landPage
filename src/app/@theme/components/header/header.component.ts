@@ -19,6 +19,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   themes = [
     {
+      value: 'cosmic',
+      name: 'Cosmic',
+    },
+    {
       value: 'default',
       name: 'Light',
     },
@@ -27,18 +31,13 @@ export class HeaderComponent implements OnInit, OnDestroy {
       name: 'Dark',
     },
     {
-      value: 'cosmic',
-      name: 'Cosmic',
-    },
-    {
       value: 'corporate',
       name: 'Corporate',
     },
   ];
 
-  currentTheme = 'default';
+  currentTheme = 'cosmic';
 
-  userMenu = [ { title: 'Profile' }, { title: 'Log out' } ];
 
   constructor(private sidebarService: NbSidebarService,
               private menuService: NbMenuService,
@@ -88,7 +87,9 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
 
   navigateHome() {
-    this.menuService.navigateHome();
+    window.location.href = 'http://localhost:4200/pages/landpage/proyects';;
+
+    //this.menuService.navigateHome();
     return false;
   }
 }

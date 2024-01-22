@@ -10,7 +10,7 @@ import { NbCardModule, NbStepperModule,
   NbButtonModule,
   NbListModule,
   NbRouteTabsetModule,
-  NbTabsetModule, NbUserModule, } from '@nebular/theme';
+  NbTabsetModule, NbUserModule, NbLayoutModule, } from '@nebular/theme';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { ThemeModule } from '../../@theme/theme.module';
@@ -48,6 +48,7 @@ import { NewsService } from '../layout/news.service';
     NbAccordionModule,
     NbUserModule,
     LayoutRoutingModule,
+    NbLayoutModule,
   ],
   providers: [
     NewsService,

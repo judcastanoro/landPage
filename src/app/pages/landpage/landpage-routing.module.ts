@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path:'proyects',
     component: ProyectsComponent
+  },
+  {
+    path: '',
+    component: ProyectsComponent,
   }
 ];
 

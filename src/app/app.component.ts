@@ -15,6 +15,13 @@ export class AppComponent implements OnInit {
 
   constructor(private analytics: AnalyticsService, private seoService: SeoService) {
   }
+  // Property to control the linear mode
+  isLinearMode: boolean = true;
+
+  // Method to toggle the linear mode
+  toggleLinearMode() {
+    this.isLinearMode = !this.isLinearMode;
+  }
 
   ngOnInit(): void {
     this.analytics.trackPageViews();

@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>ngx-admin Demo Application</title>
+  <title>Land Page JDCR</title>
 
   <base href="/">
 
@@ -17,12 +17,183 @@
   <style>@-webkit-keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@-moz-keyframes spin{0%{-moz-transform:rotate(0)}100%{-moz-transform:rotate(360deg)}}@keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.spinner{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1003;background: #000000;overflow:hidden}  .spinner div:first-child{display:block;position:relative;left:50%;top:50%;width:150px;height:150px;margin:-75px 0 0 -75px;border-radius:50%;box-shadow:0 3px 3px 0 rgba(255,56,106,1);transform:translate3d(0,0,0);animation:spin 2s linear infinite}  .spinner div:first-child:after,.spinner div:first-child:before{content:'';position:absolute;border-radius:50%}  .spinner div:first-child:before{top:5px;left:5px;right:5px;bottom:5px;box-shadow:0 3px 3px 0 rgb(255, 228, 32);-webkit-animation:spin 3s linear infinite;animation:spin 3s linear infinite}  .spinner div:first-child:after{top:15px;left:15px;right:15px;bottom:15px;box-shadow:0 3px 3px 0 rgba(61, 175, 255,1);animation:spin 1.5s linear infinite}</style>
   <div id="nb-global-spinner" class="spinner">
     <p>HOLASDasdasd</p>
-    <div class="blob blob-0"></div>
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-    <div class="blob blob-4"></div>
-    <div class="blob blob-5"></div>
+    <div class="steppers-container row" class="card1">
+      <div class="col-xxxl-16 col-xxxl-16 col-xxxl-16">
+        <nb-card size="giant">
+          <nb-card-body>
+            <nb-stepper [linear]=false orientation="vertical" >
+              <nb-step label="ABOUT ME">
+                <h2>About me</h2>
+                <p class="lorem">
+                  I am from Bogotá, Colombia. I am currently studying Computer Science at the National University of Colombia.
+                  <br>
+                  Enthusiastic about information technology, I am actively seeking
+                  professional opportunities that align with my passion for software
+                  development, with a primary focus on web and design applications.
+                  <br>
+                </p>
+                <div class="centrar-imagen">
+                  <img src="../../../../assets/images/aboutme.jpg" alt="About Me" />
+                </div>
+                <div class="alinear">
+                  <button nbButton disabled nbStepperNext size="large">prev</button>
+                  <button nbButton nbStepperNext size="large">next</button>
+                </div>
+              </nb-step>
+    
+              <nb-step label="PROYECTS">
+                <h2>Proyects</h2>
+    
+                <nb-accordion>
+                  <nb-accordion-item>
+                    <nb-accordion-item-header>
+                      ELECTION SIMULATOR
+                    </nb-accordion-item-header>
+                    <nb-accordion-item-body>
+                      <p>
+                        Creation of a complete CRUD web service simulating the registry's election results with microservices. 
+                      </p>
+                      <p>  
+                        Among the functions of the web service is the registration of voters, parties and representatives, authentication,
+                         recording of votes and displaying the results of the elections.
+                      </p>
+                      
+                      <div class="col-md-6">
+                        <div class="centrar-imagen">
+                          <img src="../../../../assets/images/Restaurante1.png" alt="About Me" />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="centrar-imagen">
+                          <img src="../../../../assets/images/Restaurante2.png" alt="About Me" />
+                        </div>
+                      </div>
+    
+                      <p>
+                        <br>See it in more details <a href="https://github.com/JuanCarrill0/ProyectoTIC" target="_blank">HERE</a>
+                      </p>
+                    </nb-accordion-item-body>
+                  </nb-accordion-item>
+    
+                  <nb-accordion-item>
+                    <nb-accordion-item-header>
+                      RESTAURANT RESERVATION SYSTEM
+                    </nb-accordion-item-header>
+                    <nb-accordion-item-body>
+                      <p>
+                        Creation of a complete CRUD web service in which you
+                         can register, log in, see the menu and hours 
+                         available to make reservations.
+                      </p>
+                       
+                      <div class="col-md-6">
+                        <div class="centrar-imagen">
+                          <img src="../../../../assets/images/Restaurante3.png" alt="About Me" />
+                        </div>
+                      </div>
+    
+                      <div class="col-md-6">
+                        <div class="centrar-imagen">
+                          <img src="../../../../assets/images/Restaurante4.png" alt="About Me" />
+                        </div>
+                      </div>
+                      <p>
+                        <br>See it in more details <a href="https://github.com/judcastanoro/Restaurante" target="_blank">HERE</a>
+                      </p>
+    
+                    </nb-accordion-item-body>
+                  </nb-accordion-item>
+                </nb-accordion>
+    
+                <div class="alinear">
+                  <button nbButton nbStepperNext size="large">prev</button>
+                  <button nbButton nbStepperNext size="large">next</button>
+                </div>
+              </nb-step>
+              <nb-step label="STUDIES AND CERTIFICATIONS">
+                <h2>Studies</h2>
+    
+                <nb-card>
+                  <nb-card-body>
+                    <nb-tabset fullWidth>
+                      <nb-tab tabTitle="COURSES">
+                        <div >
+                          <div class="centrar-imagen">
+                            <img src="../../../../assets/images/Cer1.png" alt="About Me" />
+                          </div>
+                        </div>
+                        <div >
+                          <div class="centrar-imagen">
+                            <img src="../../../../assets/images/Cer2.png" alt="About Me" />
+                          </div>
+                        </div>
+                        <div >
+                          <div class="centrar-imagen">
+                            <img src="../../../../assets/images/Cer3.png" alt="About Me" />
+                          </div>
+                        </div>
+                        <div >
+                          <div class="centrar-imagen">
+                            <img src="../../../../assets/images/Cer4.png" alt="About Me" />
+                          </div>
+                        </div>
+                      </nb-tab>
+                      <nb-tab tabTitle="CERTIFICATIONS">
+                        <div class="centrar-imagen">
+                          <img src="../../../../assets/images/Cer5.png" alt="About Me" />
+                        </div>
+                        <div class="centrar-imagen">
+                          <img src="../../../../assets/images/Cer6.png" alt="About Me" />
+                        </div>
+                      </nb-tab>
+                    </nb-tabset>
+                
+                  </nb-card-body>
+                </nb-card>
+    
+                <div class="alinear">
+                  <button nbButton nbStepperNext size="large">prev</button>
+                  <button nbButton nbStepperNext size="large">next</button>
+                </div>
+              </nb-step>
+              <nb-step label="CONTACT ME">
+                <h2>Contact me</h2>
+                <a href="www.linkedin.com/in/juan-david-castano-rodriguez-31ba51251" target="_blank" >Coadfasfa</a>
+      
+                <div class="col-12 .col-lg-12">
+                  <div class="col-md-6">
+                    <div class="centrar-imagen">
+                      <a href="www.linkedin.com/in/juan-david-castano-rodriguez-31ba51251" target="_blank" >Coadfasfa</a>
+                      <a href="github.com/judcastanoro" target="_blank" class="ion ion-social-github">
+                        <img src="../../../../assets/images/GIT.png" alt="About Me" />
+                      </a>
+                      
+                    </div>
+                  </div>
+    
+                  <div class="col-md-6">
+                    <div class="centrar-imagen">
+                      <a href="www.linkedin.com/in/juan-david-castano-rodriguez-31ba51251" target="_blank" class="ion ion-social-github">
+                        <img src="../../../../assets/images/linkedin.png" alt="About Me" />
+                      </a>
+                      
+                    </div>
+                  </div>
+                  <div class="alinear">
+                    <button nbButton nbStepperNext size="large">prev</button>
+                    <button nbButton disabled nbStepperNext size="large">next</button>
+                    <a href="www.linkedin.com/in/juan-david-castano-rodriguez-31ba51251" target="_blank" >Coadfasfa</a>
+                  </div>
+    
+                </div>
+    
+              </nb-step>
+            </nb-stepper>
+          </nb-card-body>
+        </nb-card>
+      </div>
+    </div>
+    
   </div>
 
 </body>

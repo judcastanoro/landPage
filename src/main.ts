@@ -25,7 +25,7 @@ if (environment.production) {
 })
 export class AppComponent {
   name = 'Angular';
-}
+ }
 
 
 

@@ -11,6 +11,7 @@ import { CoreModule } from './@core/core.module';
 import { ThemeModule } from './@theme/theme.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { PagesModule } from './pages/pages.module';
 import {
   NbChatModule,
   NbDatepickerModule,
@@ -39,6 +40,7 @@ import {
     }),
     CoreModule.forRoot(),
     ThemeModule.forRoot(),
+    PagesModule,
   ],
   bootstrap: [AppComponent],
 })

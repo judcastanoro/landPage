@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "ngx-admin",
-  "version": "10.0.0",
+  "version": "14.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -42,10 +42,10 @@
     "@angular/platform-browser-dynamic": "^14.2.12",
     "@angular/router": "^14.2.12",
     "@asymmetrik/ngx-leaflet": "3.0.1",
-    "@nebular/auth": "10.0.0",
-    "@nebular/eva-icons": "10.0.0",
-    "@nebular/security": "10.0.0",
-    "@nebular/theme": "10.0.0",
+    "@nebular/auth": "14.0.0",
+    "@nebular/eva-icons": "14.0.0",
+    "@nebular/security": "14.0.0",
+    "@nebular/theme": "14.0.0",
     "@swimlane/ngx-charts": "^14.0.0",
     "angular2-chartjs": "0.4.1",
     "bootstrap": "4.3.1",
@@ -63,7 +63,6 @@
     "ng2-completer": "^9.0.1",
     "ng2-smart-table": "^1.6.0",
     "ngx-echarts": "^4.2.2",
-    "node-sass": "^4.14.1",
     "normalize.css": "6.0.0",
     "pace-js": "1.0.2",
     "roboto-fontface": "0.8.0",
@@ -116,7 +115,5 @@
     "tslint": "~6.1.0",
     "tslint-language-service": "^0.9.9",
     "typescript": "~4.6.4"
-    
   }
-  
 }

@@ -12,6 +12,8 @@ import { ThemeModule } from './@theme/theme.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module';
+import { RouterModule } from '@angular/router';
+
 import {
   NbChatModule,
   NbDatepickerModule,
@@ -21,6 +23,7 @@ import {
   NbToastrModule,
   NbWindowModule,
 } from '@nebular/theme';
+import { LandpageModule } from './pages/landpage/landpage.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -38,6 +41,9 @@ import {
     NbChatModule.forRoot({
       messageGoogleMapKey: 'AIzaSyA_wNuCzia92MAmdLRzmqitRGvCF7wCZPY',
     }),
+    RouterModule.forRoot([
+      { path: '', component: LandpageModule },
+    ]),
     CoreModule.forRoot(),
     ThemeModule.forRoot(),
     PagesModule,
